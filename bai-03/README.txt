@@ -1,0 +1,1 @@
+Bài 3 — form đồng nhất với các bài trước. Audio: 3-1, 3-3, 3-5. Có Pause và bảng viết. Các ảnh luyện tập được cắt thành từng câu riêng, giữ trọn ảnh.
