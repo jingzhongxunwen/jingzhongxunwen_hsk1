@@ -1,1 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sơ đồ nhân vật chính · New HSK 1</title>
+<style>
+:root{--red:#ef5b5b;--pink:#fff4f5;--ink:#273142;--muted:#667085;--line:#f3b7bd;--blue:#eef6ff}
+*{box-sizing:border-box} body{margin:0;background:#f7f9fc;color:var(--ink);font-family:Inter,"Noto Sans",Arial,sans-serif}
+.wrap{max-width:1180px;margin:auto;padding:34px 22px 60px}
+.hero{background:linear-gradient(135deg,#fff,#fff0f2);border:1px solid #f5d1d5;border-radius:28px;padding:28px;box-shadow:0 12px 35px #18223010}
+.eyebrow{color:var(--red);font-weight:800;letter-spacing:.04em}.hero h1{font-size:34px;margin:8px 0}.hero p{line-height:1.7;color:var(--muted);margin:0}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.tabs button{border:1px solid #e7eaf0;background:white;padding:10px 15px;border-radius:999px;font-weight:700;cursor:pointer}.tabs button.active{background:var(--red);color:white;border-color:var(--red)}
+.section{margin-top:30px}.section h2{font-size:24px;margin:0 0 7px}.sub{color:var(--muted);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #e8ebf0;border-radius:20px;padding:19px;box-shadow:0 8px 22px #1822300b}
+.avatar{width:74px;height:74px;border-radius:50%;object-fit:cover;border:3px solid var(--red);background:#fff;display:block;margin:0 auto 9px}.node .avatar{width:68px;height:68px}.card .avatar{margin:0 0 10px}.card h3{margin:0 0 5px;font-size:21px}.cn{color:var(--red);font-weight:800}.py{font-size:13px;color:#8a4d54;margin-left:7px}.meta{font-size:14px;color:var(--muted);line-height:1.6}.tag{display:inline-block;background:#fff0f1;color:#c83e49;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800;margin:8px 5px 0 0}
+.map{position:relative;background:white;border:1px solid #e8ebf0;border-radius:24px;padding:25px;overflow:hidden}.node{border:2px solid #f3b7bd;background:#fff;border-radius:18px;padding:13px;text-align:center;font-weight:800}.node small{display:block;color:var(--muted);font-weight:500;margin-top:5px}.family{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}.parents{grid-column:1/3;display:grid;grid-template-columns:1fr 1fr;gap:18px}.kids{grid-column:1/3;display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative}.relation{text-align:center;color:#a44b55;font-size:13px;font-weight:700;margin:8px 0}
+.school{display:grid;grid-template-columns:1fr 1fr;gap:16px}.teacher{grid-column:1/3;max-width:420px;width:100%;margin:auto}.friends{grid-column:1/3;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ai{border-style:dashed;background:#fff8f9}.note{background:#fff8e8;border:1px solid #f6df9c;border-radius:18px;padding:16px;line-height:1.65;margin-top:18px}
+.hide{display:none}@media(max-width:760px){.grid,.school,.friends,.parents,.kids{grid-template-columns:1fr}.teacher,.friends,.parents,.kids{grid-column:auto}.hero h1{font-size:28px}}
+</style>
+</head>
+<body><main class="wrap">
+<section class="hero"><div class="eyebrow">新HSK教程 1 · NHÂN VẬT</div><h1>🧭 Sơ đồ nhân vật chính</h1>
+<p>Nội dung giáo trình diễn ra trong hai bối cảnh lớn: <b>ở nước ngoài</b>, xoay quanh lớp tiếng Trung của Vương Nhất Phi và nhóm sinh viên; và <b>tại Trung Quốc</b>, chủ yếu xoay quanh gia đình Vương Nhất Tuyết cùng đời sống công việc.</p></section>
 
+<div class="tabs"><button class="active" onclick="show('all',this)">Tất cả</button><button onclick="show('overseas',this)">🌍 Nước ngoài</button><button onclick="show('china',this)">🇨🇳 Trung Quốc</button><button onclick="show('cards',this)">👤 Hồ sơ</button></div>
+
+<section class="section overseas all"><h2>🌍 Bối cảnh tại nước ngoài</h2><p class="sub">Vương Nhất Phi là giáo viên tiếng Trung; Bạch Gia Nguyệt, Annie và Trần Thiên Trung học trong lớp của cô. Lý Văn học cùng trường và là bạn thân của ba sinh viên.</p>
+<div class="map school">
+<div class="node teacher">王一飞 · Vương Nhất Phi<small>Giáo viên tiếng Trung · người Bắc Kinh · khoảng 30 tuổi</small></div>
+<div class="relation" style="grid-column:1/3">↓ lớp tiếng Trung / 师生关系 ↓</div>
+<div class="friends">
+<div class="node"><img class="avatar" src="so-do-nhan-vat-assets/bai-jiayue.png" alt="白家月 · Bạch Gia Nguyệt">白家月 · Bạch Gia Nguyệt<small>Nữ · người Pháp · hơn 20 tuổi</small></div>
+<div class="node"><img class="avatar" src="so-do-nhan-vat-assets/annie.png" alt="安妮 · Annie">安妮 · Annie<small>Nữ · người Canada · hơn 20 tuổi</small></div>
+<div class="node"><img class="avatar" src="so-do-nhan-vat-assets/chen-tianzhong.png" alt="陈天中 · Trần Thiên Trung">陈天中 · Trần Thiên Trung<small>Nam · người Thái Lan · hơn 20 tuổi</small></div>
+<div class="node"><img class="avatar" src="so-do-nhan-vat-assets/li-wen.png" alt="李文 · Lý Văn">李文 · Lý Văn<small>Nam · người Bắc Kinh · hơn 20 tuổi · bạn thân của ba người</small></div>
+</div></div></section>
+
+<section class="section china all"><h2>🇨🇳 Bối cảnh tại Trung Quốc</h2><p class="sub">Gia đình Vương Nhất Tuyết và Lưu Minh là tuyến nhân vật chính; Dương Đồng Lạc là đồng nghiệp của Vương Nhất Tuyết.</p>
+<div class="map family">
+<div class="parents"><div class="node"><img class="avatar" src="so-do-nhan-vat-assets/wang-yixue.png" alt="王一雪 · Vương Nhất Tuyết">王一雪 · Vương Nhất Tuyết<small>Nhân viên văn phòng · chị họ của Vương Nhất Phi</small></div><div class="node"><img class="avatar" src="so-do-nhan-vat-assets/liu-ming.png" alt="刘明 · Lưu Minh">刘明 · Lưu Minh<small>Bác sĩ · chồng của Vương Nhất Tuyết</small></div></div>
+<div class="relation" style="grid-column:1/3">↓ con của hai người ↓</div>
+<div class="kids"><div class="node"><img class="avatar" src="so-do-nhan-vat-assets/liu-xiaoxue.png" alt="刘小雪 · Lưu Tiểu Tuyết">刘小雪 · Lưu Tiểu Tuyết<small>12 tuổi · học sinh tiểu học · con gái</small></div><div class="node"><img class="avatar" src="so-do-nhan-vat-assets/liu-xiaoming.png" alt="刘小明 · Lưu Tiểu Minh">刘小明 · Lưu Tiểu Minh<small>5 tuổi · học sinh mẫu giáo · con trai</small></div></div>
+<div class="node" style="grid-column:1/3;margin-top:8px">杨同乐 · Dương Đồng Lạc<small>Người Thượng Hải · khoảng 30 tuổi · đồng nghiệp của Vương Nhất Tuyết</small></div>
+</div></section>
+
+<section class="section cards all"><h2>👤 Hồ sơ nhanh</h2><p class="sub">Thông tin được trình bày theo đúng nội dung hai trang bạn cung cấp.</p>
+<div class="grid">
+<div class="card ai"><img class="avatar" src="so-do-nhan-vat-assets/ai.png" alt="AI小语"><h3><span class="cn">AI小语</span> · AI Tiểu Ngữ</h3><div class="meta">Trợ giảng thông minh của “Giáo trình New HSK”.</div><span class="tag">Trợ giảng</span></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/wang-yifei.png" alt="王一飞"><h3><span class="cn">王一飞</span><span class="py">Wáng Yīfēi</span> · Vương Nhất Phi</h3><div class="meta">Nữ, người Bắc Kinh, khoảng 30 tuổi; giảng viên tiếng Trung tại một trường đại học ở nước ngoài.</div><span class="tag">Nước ngoài</span><span class="tag">Giáo viên</span></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/bai-jiayue.png" alt="白家月"><h3><span class="cn">白家月</span><span class="py">Bái Jiāyuè</span> · Bạch Gia Nguyệt</h3><div class="meta">Nữ, người Pháp, hơn 20 tuổi; sinh viên đại học ở nước ngoài, học tiếng Trung trong lớp của Vương Nhất Phi.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/annie.png" alt="安妮"><h3><span class="cn">安妮</span><span class="py">Ānnī</span> · Annie</h3><div class="meta">Nữ, người Canada, hơn 20 tuổi; sinh viên đại học ở nước ngoài, học tiếng Trung trong lớp của Vương Nhất Phi.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/chen-tianzhong.png" alt="陈天中"><h3><span class="cn">陈天中</span><span class="py">Chén Tiānzhōng</span> · Trần Thiên Trung</h3><div class="meta">Nam, người Thái Lan, hơn 20 tuổi; sinh viên đại học ở nước ngoài, học tiếng Trung trong lớp của Vương Nhất Phi.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/li-wen.png" alt="李文"><h3><span class="cn">李文</span><span class="py">Lǐ Wén</span> · Lý Văn</h3><div class="meta">Nam, người Bắc Kinh, hơn 20 tuổi; lưu học sinh Trung Quốc, chuyên ngành y. Học cùng trường và là bạn thân của Bạch Gia Nguyệt, Annie và Trần Thiên Trung.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/wang-yixue.png" alt="王一雪"><h3><span class="cn">王一雪</span><span class="py">Wáng Yīxuě</span> · Vương Nhất Tuyết</h3><div class="meta">Nữ, người Bắc Kinh, hơn 30 tuổi; nhân viên văn phòng tại chi nhánh Bắc Kinh của một công ty xuyên quốc gia; chị họ của Vương Nhất Phi.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/liu-ming.png" alt="刘明"><h3><span class="cn">刘明</span><span class="py">Liú Míng</span> · Lưu Minh</h3><div class="meta">Nam, người Bắc Kinh, khoảng 40 tuổi; bác sĩ; chồng của Vương Nhất Tuyết.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/liu-xiaoxue.png" alt="刘小雪"><h3><span class="cn">刘小雪</span><span class="py">Liú Xiǎoxuě</span> · Lưu Tiểu Tuyết</h3><div class="meta">Nữ, người Bắc Kinh, 12 tuổi; học sinh tiểu học; con gái của Lưu Minh và Vương Nhất Tuyết.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/liu-xiaoming.png" alt="刘小明"><h3><span class="cn">刘小明</span><span class="py">Liú Xiǎomíng</span> · Lưu Tiểu Minh</h3><div class="meta">Nam, người Bắc Kinh, 5 tuổi; học sinh mẫu giáo; con trai của Lưu Minh và Vương Nhất Tuyết.</div></div>
+<div class="card"><img class="avatar" src="so-do-nhan-vat-assets/yang-tongle.png" alt="杨同乐"><h3><span class="cn">杨同乐</span><span class="py">Yáng Tónglè</span> · Dương Đồng Lạc</h3><div class="meta">Nam, người Thượng Hải, khoảng 30 tuổi; đồng nghiệp của Vương Nhất Tuyết.</div></div>
+</div>
+<div class="note"><b>Quan hệ cần nhớ:</b> Vương Nhất Phi là chị/em họ với Vương Nhất Tuyết theo mô tả trong tài liệu; Vương Nhất Tuyết và Lưu Minh là vợ chồng; Lưu Tiểu Tuyết và Lưu Tiểu Minh là hai con của họ. Ở tuyến nước ngoài, Bạch Gia Nguyệt, Annie và Trần Thiên Trung cùng học tiếng Trung với Vương Nhất Phi; Lý Văn là bạn thân của cả ba.</div>
+</section>
+</main>
+<script>
+function show(kind,btn){
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
+ document.querySelectorAll('.section').forEach(x=>x.classList.add('hide'));
+ if(kind==='all') document.querySelectorAll('.section').forEach(x=>x.classList.remove('hide'));
+ else document.querySelectorAll('.section.'+kind).forEach(x=>x.classList.remove('hide'));
+}
+</script></body></html>
