@@ -1,1 +1,176 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>静中寻文 · Ôn tập tổng hợp HSK1 · Bài 11–15</title>
+<style>
+:root{--bg:#f5f7fb;--panel:#fff;--ink:#202938;--muted:#667085;--primary:#ef5c63;--primary2:#ff9399;--ok:#1fa971;--bad:#d92d20;--line:#e7eaf0;--blue:#3478f6;--yellow:#fff7e8;--shadow:0 10px 30px rgba(20,30,60,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI","Noto Sans SC","PingFang SC",Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input{font:inherit}
+.app{min-height:100vh;display:grid;grid-template-columns:290px 1fr}aside{background:#fff;border-right:1px solid var(--line);padding:22px 16px;position:sticky;top:0;height:100vh;overflow:auto}.logo{font-size:29px;font-weight:900;letter-spacing:2px;color:#c83d47}.brand small{display:block;color:var(--muted);margin-top:5px}
+.nav-section{margin-top:18px}.nav-section-title{font-size:12px;color:#98a2b3;text-transform:uppercase;letter-spacing:.08em;padding:0 12px 6px}.nav button{width:100%;text-align:left;border:0;background:transparent;padding:11px 13px;border-radius:12px;margin:3px 0;cursor:pointer;color:#344054}.nav button.active{background:#fff0f1;color:#c83d47;font-weight:800}
+main{padding:28px;min-width:0}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.brand-mini{font-weight:900;color:#c83d47}.badge{background:#fff0f1;color:#c83d47;border-radius:999px;padding:7px 12px;font-weight:700}.progress{height:8px;background:#e9edf3;border-radius:999px;overflow:hidden;width:190px}.progress>i{display:block;height:100%;width:0;background:var(--primary)}
+.slide{display:none}.slide.active{display:block}.hero{background:linear-gradient(135deg,#ef5c63,#ff9399);border-radius:28px;padding:48px;color:#fff;box-shadow:var(--shadow);min-height:390px;display:flex;align-items:center}.hero h1{font-size:52px;line-height:1.1;margin:0 0 14px}.hero .py{font-size:21px;opacity:.95}.hero p{font-size:21px;margin:12px 0}.hero .go{margin-top:22px;border:0;border-radius:14px;padding:13px 20px;background:#fff;color:#c83d47;font-weight:800;cursor:pointer}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}h2{font-size:30px;margin:0 0 8px}h3{margin:0 0 12px}.sub{color:var(--muted);margin:0 0 20px}
+.stage-title{display:flex;align-items:center;gap:10px;margin-bottom:8px}.stage-no{width:34px;height:34px;border-radius:50%;background:#fff0f1;color:#c83d47;display:grid;place-items:center;font-weight:900}.pills{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}.pill{font-size:13px;padding:7px 10px;border-radius:999px;background:#f2f4f7;color:#475467}
+.quizq{margin:0 0 18px}.quizq>b{display:block;font-size:19px;margin-bottom:9px}.opts{display:grid;gap:8px}.opt{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 13px;text-align:left;cursor:pointer}.opt.correct{border-color:var(--ok);background:#ecfff7}.opt.wrong{border-color:#e34b55;background:#fff0f1}.result{font-weight:800;margin-top:8px;min-height:20px}
+.formula{font-size:21px;background:#fff4f5;border-radius:15px;padding:14px;color:#b83a43;font-weight:800;margin:10px 0}.readbox{background:#fafcff;border:1px solid #dfe8ff}.zh{font-size:23px;line-height:1.7}.answer{display:none;margin-top:10px;padding:10px 12px;border-radius:12px;background:#ecfff7;color:#146c4b;font-weight:700}.btn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 14px;cursor:pointer}.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}.scorebox{font-size:28px;font-weight:900;color:#c83d47}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:18px}.footer button{border:0;background:#fff;border-radius:12px;padding:11px 16px;box-shadow:var(--shadow);cursor:pointer}.small{font-size:13px;color:var(--muted)}
+.lock{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#f7d9dc,#fff);display:flex;align-items:center;justify-content:center;padding:20px}.lock-card{width:min(460px,96vw);background:#fff;border-radius:26px;padding:30px;box-shadow:0 30px 70px rgba(80,20,30,.15);text-align:center}.lock-logo{font-size:38px;font-weight:900;color:#c83d47;letter-spacing:3px}.lock input{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:12px;margin:16px 0 10px;font-size:16px}.lock button{width:100%;padding:13px;border:0;border-radius:12px;background:var(--primary);color:#fff;font-weight:800;cursor:pointer}.lock .err{height:20px;color:var(--bad);font-size:13px;margin-top:8px}
+#teacherBoardCanvas{position:fixed;inset:0;width:100vw;height:100vh;z-index:5000;pointer-events:none;touch-action:none}#teacherTools{position:fixed;right:18px;bottom:18px;z-index:5100;display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:0 14px 40px rgba(20,30,60,.18);max-width:min(92vw,760px)}#teacherTools button,#teacherTools input{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;cursor:pointer}#teacherTools button.active{background:#fff0f1;color:#c83d47;border-color:#ffc7cb;font-weight:800}.danger{color:#b42318}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside{position:relative;height:auto}.nav{display:flex;overflow:auto}.nav-section{margin-top:8px}.nav-section-title{display:none}.nav button{white-space:nowrap;width:auto}.grid,.grid3{grid-template-columns:1fr}.hero h1{font-size:38px}main{padding:18px}}
+</style></head><body>
+<div class="lock" id="lock"><div class="lock-card"><div class="lock-logo">静中寻文</div><h2 style="margin-top:12px">Ôn tập HSK1 · Bài 11–15</h2><p class="small">Nhập mật mã để mở bài ôn tập.</p><input id="pass" type="password" placeholder="Mật mã" autocomplete="off"><button onclick="unlock()">Vào bài ôn tập</button><div class="err" id="err"></div></div></div>
 
+<div class="app"><aside><div class="brand"><div class="logo">静中寻文</div><small>jingzhongxunwen · New HSK 1</small><small>Ôn tập tổng hợp · Bài 11–15</small></div>
+<div class="nav">
+<div class="nav-section"><div class="nav-section-title">Mở đầu</div><button class="active" data-i="0">🏠 Mở đầu</button><button data-i="1">🔥 Khởi động</button></div>
+<div class="nav-section"><div class="nav-section-title">Từ vựng</div><button data-i="2">📚 Từ vựng 11–12</button><button data-i="3">📚 Từ vựng 13–15</button></div>
+<div class="nav-section"><div class="nav-section-title">Ngữ pháp</div><button data-i="4">🧠 Bài 11</button><button data-i="5">🧠 Bài 12</button><button data-i="6">🧠 Bài 13</button><button data-i="7">🧠 Bài 14</button><button data-i="8">🧠 Bài 15</button></div>
+<div class="nav-section"><div class="nav-section-title">Tổng hợp</div><button data-i="9">🔀 Sắp xếp câu</button><button data-i="10">📖 Đọc hiểu</button><button data-i="11">✏️ Điền từ</button><button data-i="12">🎯 Thử thách cuối</button><button data-i="13">✅ Tổng kết</button></div>
+</div></aside><main>
+<div class="top"><span class="brand-mini">静中寻文 · jingzhongxunwen</span><div style="display:flex;gap:12px;align-items:center"><span class="badge" id="counter">1 / 14</span><div><span class="small">Tiến độ ôn tập</span><div class="progress"><i id="bar"></i></div></div></div></div>
+
+<section class="slide active"><div class="hero"><div><div class="py">Zǒng fùxí · Dì 11–15 kè</div><h1>综合复习</h1><p>Ôn tập tổng hợp HSK1 · Bài 11–15</p><p style="font-size:16px;opacity:.94">Từ vựng → ngữ pháp → bài khóa → bài tập tổng hợp. Nội dung chỉ lấy từ 5 bài đã học.</p><button class="go" onclick="go(1)">Bắt đầu →</button></div></div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">0</div><h2>Khởi động · Nhớ nhanh</h2></div><p class="sub">Chọn đáp án đúng theo kiến thức Bài 11–15.</p>
+<div class="grid">
+<div class="card"><div class="quizq"><b>1. “đang học đại học”</b><div class="opts" data-answer="我正在读大学。"><button class="opt">我正在读大学。</button><button class="opt">我昨天读大学了。</button><button class="opt">我没大学。</button></div><div class="result"></div></div></div>
+<div class="card"><div class="quizq"><b>2. “Lạnh quá!”</b><div class="opts" data-answer="太冷了！"><button class="opt">冷太了！</button><button class="opt">太冷了！</button><button class="opt">太了冷！</button></div><div class="result"></div></div></div>
+<div class="card"><div class="quizq"><b>3. Gọi món: “Cho tôi một cốc trà.”</b><div class="opts" data-answer="请给我一杯茶。"><button class="opt">请给我一杯茶。</button><button class="opt">我给茶一杯。</button><button class="opt">请茶给我。</button></div><div class="result"></div></div></div>
+<div class="card"><div class="quizq"><b>4. “Những món này đều ngon, còn rất đẹp.”</b><div class="opts" data-answer="这些菜都好吃，还很好看。"><button class="opt">这些菜都好吃，还很好看。</button><button class="opt">这些菜还都很好看吃。</button><button class="opt">这些菜也都飞机。</button></div><div class="result"></div></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">1</div><h2>Từ vựng · Bài 11–12</h2></div><div class="pills"><span class="pill">正在</span><span class="pill">大学</span><span class="pill">开车</span><span class="pill">起床</span><span class="pill">天气</span><span class="pill">下雨</span><span class="pill">雪</span><span class="pill">生病</span><span class="pill">看病</span><span class="pill">药</span><span class="pill">热水</span></div>
+<div class="card">
+<div class="quizq"><b>1. 他没起床呢，还在______。</b><div class="opts" data-answer="睡觉"><button class="opt">睡觉</button><button class="opt">开车</button><button class="opt">看病</button></div><div class="result"></div></div>
+<div class="quizq"><b>2. 昨天______了，太冷了！</b><div class="opts" data-answer="下雪"><button class="opt">大学</button><button class="opt">下雪</button><button class="opt">饭店</button></div><div class="result"></div></div>
+<div class="quizq"><b>3. 我昨天去医院______了。</b><div class="opts" data-answer="看病"><button class="opt">看病</button><button class="opt">天气</button><button class="opt">开车</button></div><div class="result"></div></div>
+<div class="quizq"><b>4. 回家后再喝些______。</b><div class="opts" data-answer="热水"><button class="opt">雪</button><button class="opt">热水</button><button class="opt">大学</button></div><div class="result"></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">2</div><h2>Từ vựng · Bài 13–15</h2></div><div class="pills"><span class="pill">问题</span><span class="pill">打电话</span><span class="pill">服务员</span><span class="pill">面包</span><span class="pill">鸡蛋</span><span class="pill">茶</span><span class="pill">火车</span><span class="pill">汉字</span><span class="pill">小学生</span><span class="pill">男朋友</span><span class="pill">飞机</span><span class="pill">机场</span><span class="pill">时间</span><span class="pill">接</span></div>
+<div class="card">
+<div class="quizq"><b>1. 你可以______问一下。</b><div class="opts" data-answer="打电话"><button class="opt">打电话</button><button class="opt">飞机</button><button class="opt">汉字</button></div><div class="result"></div></div>
+<div class="quizq"><b>2. 请给我一杯______。</b><div class="opts" data-answer="茶"><button class="opt">机场</button><button class="opt">茶</button><button class="opt">男朋友</button></div><div class="result"></div></div>
+<div class="quizq"><b>3. 我们星期日早上八点到大兴______。</b><div class="opts" data-answer="机场"><button class="opt">机场</button><button class="opt">问题</button><button class="opt">鸡蛋</button></div><div class="result"></div></div>
+<div class="quizq"><b>4. 王老师的姐姐可以去机场______你们。</b><div class="opts" data-answer="接"><button class="opt">接</button><button class="opt">写</button><button class="opt">卖</button></div><div class="result"></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">3</div><h2>Ngữ pháp · Bài 11</h2></div><div class="grid">
+<div class="card"><h3>Câu hỏi chính phản</h3><div class="formula">V + 不 / 没 + V ?<br>Adj + 不 + Adj ?</div><p>你去不去超市？ · 你们学习忙不忙？</p></div>
+<div class="card"><h3>Hành động đang diễn ra</h3><div class="formula">在 / 正在 + V (+ 呢)<br>V + 呢</div><p>我正在学习呢。 · 我读大学呢。</p></div>
+<div class="card"><h3>要 + V</h3><div class="formula">Chủ ngữ + 要 + Động từ</div><p>他今天要和小朋友玩。</p></div>
+<div class="card"><div class="quizq"><b>Chọn câu đúng: “Hôm nay bạn có đi siêu thị không?”</b><div class="opts" data-answer="你今天去不去超市？"><button class="opt">你今天去不去超市？</button><button class="opt">你今天超市不超市？</button><button class="opt">你今天正在超市了？</button></div><div class="result"></div></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">4</div><h2>Ngữ pháp · Bài 12</h2></div><div class="grid">
+<div class="card"><h3>Câu phi chủ vị + 了</h3><div class="formula">下雨了。 · 下雪了。</div><p>了 biểu thị sự thay đổi hoặc tình huống mới.</p></div>
+<div class="card"><h3>太……了</h3><div class="formula">太 + tính từ + 了！</div><p>太冷了！ · 这个杯子太小了。</p></div>
+<div class="card"><h3>看看</h3><div class="formula">看 → 看看</div><p>Biểu thị xem/làm trong thời gian ngắn: 我看看。</p></div>
+<div class="card"><div class="quizq"><b>外边正在下______，______冷了！</b><div class="opts" data-answer="雪 / 太"><button class="opt">雪 / 太</button><button class="opt">太 / 雪</button><button class="opt">药 / 看</button></div><div class="result"></div></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">5</div><h2>Ngữ pháp · Bài 13</h2></div><div class="grid">
+<div class="card"><h3>可以</h3><div class="formula">可以 + Động từ</div><p>我可以再问您一个问题吗？</p></div>
+<div class="card"><h3>Động từ + 一下</h3><div class="formula">V + 一下</div><p>你可以打电话问一下。</p></div>
+<div class="card"><h3>Câu có hai tân ngữ</h3><div class="formula">给 + người + vật<br>问 + người + vấn đề</div><p>请给我一杯牛奶。 · 我问老师两个问题。</p></div>
+<div class="card"><div class="quizq"><b>Chọn câu gọi món đúng.</b><div class="opts" data-answer="请给我一杯牛奶。"><button class="opt">请给我一杯牛奶。</button><button class="opt">请我给牛奶一杯。</button><button class="opt">一杯给我请牛奶。</button></div><div class="result"></div></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">6</div><h2>Ngữ pháp · Bài 14</h2></div><div class="grid">
+<div class="card"><h3>了（2）</h3><div class="formula">V + 了<br>没（有）+ V</div><p>我看了一个电影。 · 我昨天没去商店。</p></div>
+<div class="card"><h3>Từ li hợp</h3><div class="formula">睡觉 → 睡了觉 / 睡了一觉</div><p>Các từ trong bài: 上课、下课、上班、下班、说话、读书、睡觉、看病…</p></div>
+<div class="card"><h3>都</h3><div class="formula">Phạm vi + 都 + vị ngữ</div><p>我们都会写了。 · 同学们都没听见。</p></div>
+<div class="card"><div class="quizq"><b>“Hôm qua tôi không đi siêu thị.”</b><div class="opts" data-answer="我昨天没去超市。"><button class="opt">我昨天没去超市。</button><button class="opt">我昨天没去了超市。</button><button class="opt">我昨天都超市。</button></div><div class="result"></div></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">7</div><h2>Ngữ pháp · Bài 15</h2></div><div class="card"><h3>Câu ghép đẳng lập “……，还/也……”</h3><div class="formula">A， 也 / 还 + B</div><p>我喜欢这个，也喜欢那个。</p><p>我喜欢喝中国茶，还喜欢吃中国菜。</p>
+<div class="quizq"><b>1. 我喜欢北京，______喜欢西安。</b><div class="opts" data-answer="也"><button class="opt">也</button><button class="opt">了</button><button class="opt">没</button></div><div class="result"></div></div>
+<div class="quizq"><b>2. 这些菜很好吃，______很好看。</b><div class="opts" data-answer="还"><button class="opt">还</button><button class="opt">雪</button><button class="opt">机场</button></div><div class="result"></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">8</div><h2>Sắp xếp câu</h2></div><p class="sub">Chọn thứ tự tạo thành câu đúng.</p><div class="card">
+<div class="quizq"><b>1. 正在 / 我 / 学习 / 呢</b><div class="opts" data-answer="我正在学习呢。"><button class="opt">我正在学习呢。</button><button class="opt">正在我呢学习。</button><button class="opt">学习我正在呢。</button></div><div class="result"></div></div>
+<div class="quizq"><b>2. 给 / 请 / 一杯茶 / 我</b><div class="opts" data-answer="请给我一杯茶。"><button class="opt">请给我一杯茶。</button><button class="opt">我一杯茶请给。</button><button class="opt">给一杯茶请我。</button></div><div class="result"></div></div>
+<div class="quizq"><b>3. 一个电影 / 我 / 看了</b><div class="opts" data-answer="我看了一个电影。"><button class="opt">我看了一个电影。</button><button class="opt">我一个电影看了。</button><button class="opt">看了我电影一个。</button></div><div class="result"></div></div>
+<div class="quizq"><b>4. 都 / 这些菜 / 好吃</b><div class="opts" data-answer="这些菜都好吃。"><button class="opt">这些菜都好吃。</button><button class="opt">都这些菜好吃。</button><button class="opt">好吃都这些菜。</button></div><div class="result"></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">9</div><h2>Đọc hiểu · Tổng hợp bài khóa</h2></div><div class="grid">
+<div class="card readbox"><h3>Đoạn 1</h3><p class="zh">弟弟没起床呢，还在睡觉。他今天不去超市，他要和小朋友玩。</p>
+<div class="quizq"><b>弟弟今天要做什么？</b><div class="opts" data-answer="和小朋友玩"><button class="opt">和小朋友玩</button><button class="opt">去超市</button><button class="opt">去医院</button></div><div class="result"></div></div></div>
+<div class="card readbox"><h3>Đoạn 2</h3><p class="zh">昨天下雪了。杨同乐没来公司，他去医院看病了。医生说：“今天休息半天吧，回家后再喝些热水。”</p>
+<div class="quizq"><b>医生让杨同乐回家后做什么？</b><div class="opts" data-answer="喝些热水"><button class="opt">喝些热水</button><button class="opt">去公司</button><button class="opt">开车</button></div><div class="result"></div></div></div>
+<div class="card readbox"><h3>Đoạn 3</h3><p class="zh">刘明要一斤饺子。服务员说一斤有40个。刘明觉得太多了，所以要一半，还要一杯茶。</p>
+<div class="quizq"><b>刘明最后要多少饺子？</b><div class="opts" data-answer="半斤，20个"><button class="opt">半斤，20个</button><button class="opt">一斤，40个</button><button class="opt">不要饺子</button></div><div class="result"></div></div></div>
+<div class="card readbox"><h3>Đoạn 4</h3><p class="zh">安妮去年和男朋友去了西安，今年想去北京。白家月今年也想去北京。</p>
+<div class="quizq"><b>安妮今年想去哪儿？</b><div class="opts" data-answer="北京"><button class="opt">北京</button><button class="opt">西安</button><button class="opt">医院</button></div><div class="result"></div></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">10</div><h2>Điền từ · Ôn tổng hợp</h2></div><p class="sub">Chọn từ phù hợp nhất với từng câu.</p><div class="card">
+<div class="quizq"><b>1. 你们学习______？</b><div class="opts" data-answer="忙不忙"><button class="opt">忙不忙</button><button class="opt">正在忙</button><button class="opt">忙了没了</button></div><div class="result"></div></div>
+<div class="quizq"><b>2. 这里的天不太好，______了。</b><div class="opts" data-answer="下雨"><button class="opt">下雨</button><button class="opt">大学</button><button class="opt">机场</button></div><div class="result"></div></div>
+<div class="quizq"><b>3. 这个商店卖不卖手机？你可以去问______。</b><div class="opts" data-answer="一下"><button class="opt">一下</button><button class="opt">一半</button><button class="opt">一年</button></div><div class="result"></div></div>
+<div class="quizq"><b>4. 我昨天看______一个电影。</b><div class="opts" data-answer="了"><button class="opt">了</button><button class="opt">都</button><button class="opt">还</button></div><div class="result"></div></div>
+<div class="quizq"><b>5. 我喜欢这个，______喜欢那个。</b><div class="opts" data-answer="也"><button class="opt">也</button><button class="opt">雪</button><button class="opt">没</button></div><div class="result"></div></div>
+<div class="quizq"><b>6. 王老师的姐姐可以去______接你们。</b><div class="opts" data-answer="机场"><button class="opt">机场</button><button class="opt">热水</button><button class="opt">汉字</button></div><div class="result"></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">11</div><h2>Thử thách cuối · 10 câu</h2></div><p class="sub">Không xem lại bài cũ. Hoàn thành một lượt rồi xem điểm ở trang Tổng kết.</p><div class="card finalquiz">
+<div class="quizq"><b>1. “Bạn có lái xe không?”</b><div class="opts" data-answer="你开车没开车？"><button class="opt">你开车没开车？</button><button class="opt">你车开不开车了？</button><button class="opt">你正在开车不？</button></div><div class="result"></div></div>
+<div class="quizq"><b>2. 我______看电视，我在学习呢。</b><div class="opts" data-answer="没"><button class="opt">没</button><button class="opt">了</button><button class="opt">太</button></div><div class="result"></div></div>
+<div class="quizq"><b>3. 昨天下雪了，______冷了！</b><div class="opts" data-answer="太"><button class="opt">太</button><button class="opt">都</button><button class="opt">也</button></div><div class="result"></div></div>
+<div class="quizq"><b>4. 请______我一杯牛奶。</b><div class="opts" data-answer="给"><button class="opt">给</button><button class="opt">问</button><button class="opt">接</button></div><div class="result"></div></div>
+<div class="quizq"><b>5. 我______老师两个问题。</b><div class="opts" data-answer="问"><button class="opt">问</button><button class="opt">给</button><button class="opt">飞</button></div><div class="result"></div></div>
+<div class="quizq"><b>6. 我昨天______去商店买东西。</b><div class="opts" data-answer="没"><button class="opt">没</button><button class="opt">了</button><button class="opt">还</button></div><div class="result"></div></div>
+<div class="quizq"><b>7. 我们______会写汉字了。</b><div class="opts" data-answer="都"><button class="opt">都</button><button class="opt">雪</button><button class="opt">太</button></div><div class="result"></div></div>
+<div class="quizq"><b>8. 这些菜很好吃，______很好看。</b><div class="opts" data-answer="还"><button class="opt">还</button><button class="opt">没</button><button class="opt">了</button></div><div class="result"></div></div>
+<div class="quizq"><b>9. 飞机到北京要几个______？</b><div class="opts" data-answer="小时"><button class="opt">小时</button><button class="opt">问题</button><button class="opt">杯</button></div><div class="result"></div></div>
+<div class="quizq"><b>10. 星期日早上八点，我们在大兴______见。</b><div class="opts" data-answer="机场"><button class="opt">机场</button><button class="opt">饭店</button><button class="opt">大学</button></div><div class="result"></div></div>
+</div></section>
+
+<section class="slide"><div class="stage-title"><div class="stage-no">✓</div><h2>Tổng kết · Bài 11–15</h2></div><div class="grid">
+<div class="card"><h3>Điểm thử thách cuối</h3><div class="scorebox" id="finalScore">0 / 10</div><p class="small">Điểm cập nhật khi bạn chọn đáp án trong phần Thử thách cuối.</p><button class="btn" onclick="resetAll()">Làm lại toàn bộ</button></div>
+<div class="card"><h3>Kiến thức đã ôn</h3><ul>
+<li>Bài 11: câu hỏi chính phản; 在/正在…呢; 要 + V.</li>
+<li>Bài 12: câu phi chủ vị; 了 (1); 太……了; 看看.</li>
+<li>Bài 13: 可以; V + 一下; câu hai tân ngữ với 给/问.</li>
+<li>Bài 14: 了 (2); phủ định 没（有）+ V; từ li hợp; 都.</li>
+<li>Bài 15: câu ghép “……，还/也……”, kế hoạch du lịch và sân bay.</li>
+</ul></div></div>
+<div class="card" style="margin-top:16px"><h3>Mẫu câu cần nhớ</h3><div class="formula">你去不去超市？　·　我正在学习呢。　·　太冷了！　·　请给我一杯茶。　·　我看了一个电影。　·　这些菜都好吃，还很好看。</div></div>
+</section>
+
+<div class="footer"><button onclick="prev()">← Trước</button><span class="small">Ôn tập tổng hợp HSK1 · Bài 11–15</span><button onclick="next()">Sau →</button></div>
+</main></div>
+
+<canvas id="teacherBoardCanvas"></canvas>
+<div id="teacherTools"><button id="teachToggle">👩‍🏫 Bảng viết</button><button data-tool="pen">✏️ Bút</button><button data-tool="highlight">🖍 Highlight</button><button data-tool="eraser">🧽 Tẩy</button><span class="small">Nét</span><input id="brushSize" type="range" min="2" max="28" value="5"><button id="undoBtn">↩ Undo</button><button id="redoBtn">↪ Redo</button><button class="danger" id="clearBtn">🗑 Xóa bảng</button></div>
+
+<script>
+const PASS='jzhxw';
+function unlock(){const p=document.getElementById('pass');if(p.value===PASS){document.getElementById('lock').style.display='none'}else{document.getElementById('err').textContent='Mật mã chưa đúng.'}}
+document.getElementById('pass').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+const slides=[...document.querySelectorAll('.slide')], nav=[...document.querySelectorAll('.nav button[data-i]')]; let cur=0;
+function go(i){cur=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=>s.classList.toggle('active',j===cur));nav.forEach(b=>b.classList.toggle('active',+b.dataset.i===cur));document.getElementById('counter').textContent=(cur+1)+' / '+slides.length;document.getElementById('bar').style.width=((cur+1)/slides.length*100)+'%';window.scrollTo({top:0,behavior:'smooth'});}
+function next(){go(cur+1)} function prev(){go(cur-1)} nav.forEach(b=>b.onclick=()=>go(+b.dataset.i)); go(0);
+function updateScore(){let qs=[...document.querySelectorAll('.finalquiz .opts')],n=0;qs.forEach(q=>{if(q.dataset.done==='1'&&q.dataset.correct==='1')n++});document.getElementById('finalScore').textContent=n+' / '+qs.length}
+document.querySelectorAll('.opts').forEach(box=>{box.querySelectorAll('.opt').forEach(btn=>btn.addEventListener('click',()=>{if(box.dataset.done==='1')return;box.dataset.done='1';let ok=btn.textContent.trim()===box.dataset.answer.trim();box.dataset.correct=ok?'1':'0';btn.classList.add(ok?'correct':'wrong');if(!ok){[...box.querySelectorAll('.opt')].find(x=>x.textContent.trim()===box.dataset.answer.trim())?.classList.add('correct')}let r=box.parentElement.querySelector('.result');if(r)r.textContent=ok?'✓ Đúng':'✗ Chưa đúng · Đáp án: '+box.dataset.answer;updateScore()}))});
+function resetAll(){document.querySelectorAll('.opts').forEach(b=>{delete b.dataset.done;delete b.dataset.correct;b.querySelectorAll('.opt').forEach(x=>x.classList.remove('correct','wrong'));let r=b.parentElement.querySelector('.result');if(r)r.textContent=''});updateScore();go(1)}
+
+// Teacher board: one activation supports continuous strokes; UI remains clickable through the canvas.
+const canvas=document.getElementById('teacherBoardCanvas'),ctx=canvas.getContext('2d'),toggle=document.getElementById('teachToggle'),size=document.getElementById('brushSize');
+let on=false,tool='pen',drawing=false,last=null,undo=[],redo=[];
+function resize(){let old=document.createElement('canvas');old.width=canvas.width;old.height=canvas.height;old.getContext('2d').drawImage(canvas,0,0);canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);if(old.width)ctx.drawImage(old,0,0,old.width/devicePixelRatio,old.height/devicePixelRatio)}
+resize();addEventListener('resize',resize);
+function snap(){try{return ctx.getImageData(0,0,canvas.width,canvas.height)}catch(e){return null}}
+function restore(im){if(im)ctx.putImageData(im,0,0)}
+toggle.onclick=()=>{on=!on;toggle.classList.toggle('active',on);canvas.style.pointerEvents=on?'auto':'none';drawing=false};
+document.querySelectorAll('#teacherTools [data-tool]').forEach(b=>b.onclick=()=>{tool=b.dataset.tool;document.querySelectorAll('#teacherTools [data-tool]').forEach(x=>x.classList.toggle('active',x===b));on=true;toggle.classList.add('active');canvas.style.pointerEvents='auto'});
+function uiTarget(x,y){let old=canvas.style.pointerEvents;canvas.style.pointerEvents='none';let el=document.elementFromPoint(x,y);canvas.style.pointerEvents=old;return el&&el.closest('button,a,input,.nav,.footer,#teacherTools')}
+canvas.addEventListener('pointerdown',e=>{if(!on)return;let target=uiTarget(e.clientX,e.clientY);if(target){e.preventDefault();target.click();return}undo.push(snap());redo=[];drawing=true;last=[e.clientX,e.clientY];canvas.setPointerCapture?.(e.pointerId);e.preventDefault()},true);
+canvas.addEventListener('pointermove',e=>{if(!drawing)return;let x=e.clientX,y=e.clientY;ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=+size.value;if(tool==='eraser'){ctx.globalCompositeOperation='destination-out';ctx.strokeStyle='rgba(0,0,0,1)'}else{ctx.globalCompositeOperation='source-over';ctx.strokeStyle=tool==='highlight'?'rgba(255,220,0,.28)':'rgba(220,40,55,.9)';if(tool==='highlight')ctx.lineWidth=+size.value*2.4}ctx.beginPath();ctx.moveTo(last[0],last[1]);ctx.lineTo(x,y);ctx.stroke();last=[x,y];e.preventDefault()});
+canvas.addEventListener('pointerup',()=>{drawing=false;last=null});
+canvas.addEventListener('pointercancel',()=>{drawing=false;last=null});
+document.getElementById('undoBtn').onclick=()=>{if(!undo.length)return;redo.push(snap());restore(undo.pop())};
+document.getElementById('redoBtn').onclick=()=>{if(!redo.length)return;undo.push(snap());restore(redo.pop())};
+document.getElementById('clearBtn').onclick=()=>{undo.push(snap());redo=[];ctx.clearRect(0,0,canvas.width,canvas.height)};
+</script></body></html>
